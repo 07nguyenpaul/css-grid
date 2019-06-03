@@ -21,7 +21,10 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
-      grid-template-columns: repeat(auto-fill, 150px);
+
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      /* SPECIFYING WHAT THE MIN AND MAX SIZE TRACK WILL BE */
+      /* PARTNER WITH AUTO-FILL OR AUTO-FIT - EITHER ADD OR REMOVE EXTRA SPACE */
     }
   </style>
 </body>
