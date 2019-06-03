@@ -37,6 +37,18 @@
       display: grid;
       grid-gap: 20px;
       border: 10px solid var(--yellow);
+
+      grid-template-columns: repeat(auto-fit, 150px);
+      /* CREATES COLUMNS EVEN THOUGH THERE IS NOTHING THERE */
+
+      /* .item20 {
+        grid-column-end: -1;
+      } */
+      /* GOOD FOR POSITIONING LAST ITEM AT THE END OF GRID, LEAVING SPACE BETWEEN */
+
+      /* grid-template-columns: repeat(auto-fit, 150px); */
+      /* ENDS EXPLICIT COLUMN WHERE LAST ITEM IS */
+      /* BAD FOR POSITIONING LAST ITEM AT THE END OF GRID B/C COLUMN ENDS WHERE LAST ITEM IS */
     }
   </style>
 </body>
