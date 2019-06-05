@@ -53,6 +53,8 @@
   </div>
 
   <style>
+    /* https://css-tricks.com/snippets/css/complete-guide-grid/ */
+
     /*
       justify-items:
       align-items:
@@ -71,6 +73,19 @@
       display: grid;
       grid-gap: 20px;
       grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(5, 100px);
+
+
+      /* align-items: center;
+      justify-items: center; */
+      place-items: center center;
+      /* PLACE ITEM ALLOWS YOU TO PLACE ALIGN AND JUSTIFY ON ONE LINE */
+
+      justify-content: space-around;
+    }
+
+    .itm {
+      background: white;
     }
   </style>
 </body>
