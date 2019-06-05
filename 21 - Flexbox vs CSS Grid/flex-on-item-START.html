@@ -22,6 +22,10 @@
   <style>
     .controls {
       margin: 200px 0;
+
+      display: flex;
+      /* FLEX BOX WINS HERE, INSTEAD OF DOING GRID-TEMPLATE-COLUMN: AUTO AUTO AUTO 1FR AUTO
+      THIS IS TROUBLESOME B/C IF YOU DELETE AN ITEM, 1FR IS NOW ASSIGNED TO SOMETHING ELSE */
     }
 
     .scrubber {
@@ -29,6 +33,9 @@
       height: 10px;
       min-width: 100px;
       border-radius: 10px;
+
+      flex: 1;
+      /* FLEX GROW DEPENDING ON SCREEN SIZE */
     }
   </style>
 
